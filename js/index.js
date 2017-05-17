@@ -6,7 +6,7 @@ $(document).ready(function(){
     $("#search").html("<form><input type=text name=query id = what><input type=button value=Search id = find></form>");
 
     $("#search").on("keypress", "#what", function(e){
-     if(e.which === 13){
+     if(e.which == 13){
        e.preventDefault();
             $("#find").click();
 
